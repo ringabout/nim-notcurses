@@ -217,7 +217,7 @@ jobs:
           find -L . -type l -delete
           cd -
           source "${HOME}/.bash_env"
-          nimble --accept install --depsOnly
+          nimble --accept install --depsOnly --verbose
 
       # Nim's version-2-0 branch still sets package search path to pkgs instead
       # of pkgs2 when NIMBLE_DIR environment variable is set

@@ -228,6 +228,7 @@ jobs:
       - name: Build examples
         run: |
           source "${HOME}/.bash_env"
+          cat "${HOME}/.bash_env"
           extras/build_examples.sh
           echo
           extras/build_examples.sh -d:release

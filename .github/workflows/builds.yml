@@ -229,6 +229,9 @@ jobs:
         run: |
           source "${HOME}/.bash_env"
           cat "${HOME}/.bash_env"
+          nim -v
+          nimble -v
+          nimble path stew
           extras/build_examples.sh
           echo
           extras/build_examples.sh -d:release
